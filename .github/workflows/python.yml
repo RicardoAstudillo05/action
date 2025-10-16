@@ -24,7 +24,7 @@ jobs:
         python-version: "3.13"
 
     - name: Instalar dependencias 
-    - uses: pip install --upgrade pip
+    - run: pip install --upgrade pip
 
     - name: Ejecutar Script 
-    - uses: python action.py
+    - run: python action.py
