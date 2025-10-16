@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Clonar repositorio
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: Configurar Python
       uses: actions/setup-python@v4
@@ -23,7 +23,7 @@ jobs:
         python-version: "3.13"
 
     - name: Instalar dependencias 
-    - run: pip install --upgrade pip
+      run: pip install --upgrade pip
 
     - name: Ejecutar Script 
-    - run: python action.py
+      run: python action.py
